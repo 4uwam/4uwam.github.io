@@ -1,0 +1,494 @@
+$colorfondo : #f3f5fc;
+$colorprimario: #20497e;
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+    background-color: $colorfondo;
+}
+
+header{
+
+    svg{
+        position: absolute;
+        left: 84px;
+        top: 40px;
+        cursor: pointer;
+    }
+}
+
+
+main{
+    #texto{
+        position: absolute;
+        left: 240px;
+        top: 140px;
+        
+
+        textarea{
+            font-family: 'Inter';
+            font-size: 32px;
+            color: $colorprimario;
+            border: 0px;
+            background-color: $colorfondo;
+            outline: none;
+            width: 730px;
+            height: 600px;
+            resize: none;
+        }
+
+        ::placeholder {
+            color: $colorprimario;
+          }
+    }
+
+    #acciones{
+
+        .alerta{
+            position: absolute;
+            left: 245px;
+            top: 790px;
+        }
+        #condicion{
+            position: absolute;
+            left: 264px;
+            top: 779px;
+            font-family: 'Inter';
+            opacity: 0.8;
+            color: #495057;
+            font-size: 12px;
+        }
+
+        #botones{
+            position: absolute;
+            left: 240px;
+            top: 830px;
+
+            .boton1{
+                background-color: $colorprimario;
+                width: 328px;
+                height: 67px;
+                border-radius: 24px;
+                font-family: 'Inter';
+                color: white;
+                font-size: 16px;
+                border: 1px solid $colorprimario;
+                cursor: pointer;
+                transition: transform ease 300ms;
+            }
+
+            .boton1:hover{
+              transform: translateY(-0.25em);
+            }
+            
+
+            .boton2{
+                background-color: #D8DFE8;
+                width: 328px;
+                height: 67px;
+                border-radius: 24px;
+                font-family: 'Inter';
+                color: $colorprimario;
+                font-size: 16px;
+                border: 1px solid $colorprimario;
+                margin-left: 15px;
+                cursor: pointer;
+                transition: transform ease 300ms;
+            }
+
+            .boton2:hover{
+                transform: translateY(-0.25em);
+              }
+        }
+
+    }
+
+
+
+
+}
+
+
+
+
+
+aside{
+    display: inline-block;
+    position: absolute;
+    width: 400px;
+    height: 900px;
+    left: 1000px;
+    top: 30px;
+
+    background: #FFFFFF;
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    
+    div{
+
+        #mostrarTexto{  
+            width: 360px;
+            height: 770px;
+            margin-left: 15px;
+            padding-left: 10px;
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 24px;
+            color: #495057;
+            word-break: break-all;
+            white-space: pre-wrap;
+        }
+
+        #botonCopiar{
+            background-color: white;
+            width: 328px;
+            height: 67px;
+            border-radius: 24px;
+            font-family: 'Inter';
+            color: $colorprimario;
+            font-size: 16px;
+            border: 1px solid $colorprimario;
+            position: absolute;
+            left: 32px;
+            top: 800px;
+            cursor: pointer;
+            transition: transform ease 300ms;
+        }
+
+        #botonCopiar:hover{
+            transform: translateY(-0.25em);
+          }
+
+        #mensajeCopiado{
+
+            font-family: 'Inter';
+            position: absolute;
+            left: 140px;
+            top: 855px;
+        }
+
+        img{
+            position: absolute;
+            width: 336px;
+            height: 304px;
+            top: 243px;
+            left: 32px;
+        }
+
+        #error{
+            position: absolute;
+            top: 579px;
+            left: 32px;
+            width: 336px;
+            height: 58px;
+            font-family: 'Inter';
+            font-size: 24px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        #consejo{
+            position: absolute;
+            top: 653px;
+            left: 32px;
+            width: 336px;
+            height: 48px;
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 16px;
+            text-align: center;
+            color: #495057;
+        }
+    }
+
+    #credits{
+        margin-top: 350px;
+        margin-left: 40px;
+        p{
+            font-family: 'Inter';
+            font-size: 23px;
+            color: $colorprimario;
+        }
+
+         a{
+             img{
+                 width: 50px;
+                 height: 50px;
+             }
+
+             .github{
+                 margin-left: 70px;
+                 margin-top: 200px;
+             }
+
+             .linkedin{
+                 margin-left: 200px;
+                 margin-top: 200px;
+             }
+         }
+    }
+}
+
+.oculto{
+    display: none;
+}
+
+//Responsive Design Table
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    html{ max-width: 100%; overflow-x: hidden; }
+
+
+    header{
+
+        svg{
+            left: 40px;
+            top: 70px;
+        }
+    }
+
+    main{
+
+        #texto{
+            left: 40px;
+            top: 200px;
+
+            textarea{
+                height: 580px;
+                width: 700px;
+            }
+        }
+
+        #acciones{
+
+            .alerta{
+                top: 800px;
+                left: 40px;
+            }
+
+            #condicion{
+                top: 790px;
+                left: 60px;
+            }
+
+            #botones{
+
+                left: 40px;
+            }
+        }
+    }
+
+    .fitcontent{
+
+        height: fit-content;
+        padding-bottom: 10px;
+    }
+
+    aside{
+        position: absolute;
+        width: 688px;
+        height: 133px;
+        left: 40px;
+        top: 950px;
+
+        div{
+
+            #mostrarTexto{
+                width: 645px;
+                height: fit-content;
+            }
+
+            img{
+                display: none;
+            }
+
+            #error{
+                left: 140px;
+                top: 10px;
+                width: 400px;
+            }
+
+            #consejo{
+                left: 140px;
+                top: 70px;
+                width: 400px;
+            }
+
+            #botonCopiar{
+                position: relative;
+                left: 0px;
+                top: 0px;
+                margin-left: 220px;
+                width: 250px;
+            }
+
+            #mensajeCopiado{
+                position: relative;
+                left: 0px;
+                top: 0px;
+                margin-left: 290px;
+            }
+        }
+
+        #credits{
+            margin-top: 40px;
+            margin-left: 220px;
+            p{
+                font-family: 'Inter';
+                font-size: 20px;
+                color: $colorprimario;
+            }
+
+            a{
+                margin-left: 0px;
+                margin-top: 0px;
+
+                img{
+                    width: 200px;
+                    height: 200px;
+                }
+    
+                .github{
+                    margin-left: 0px;
+                    margin-top: 0px;
+                }
+    
+                .linkedin{
+                    margin-left: 0px;
+                    margin-top: 0px;
+                }
+            }
+
+        }
+
+    }
+
+
+}
+
+//Responsive Design Mobile
+
+@media only screen and (max-width: 440px) {
+
+    html{ max-width: 100%; overflow-x: hidden; }
+
+    header{
+
+        width: 350px;
+       svg{
+            left: 10px;
+            top: 20px;
+            height: 40px;
+        }
+    }
+
+    main{
+
+        width: 350px;
+        #texto{
+            left: 40px;
+            top: 100px;
+
+            textarea{
+                font-size: 25px;
+                width: 330px;
+                height: 400px;
+            }
+        }
+
+        #acciones{
+            .alerta{
+                left: 40px;
+                top: 530px;
+            }
+
+            #condicion{
+                left: 60px;
+                top: 519px;
+            }
+
+            #botones{
+                left: 40px;
+                width: 330px;
+                top: 570px;
+
+                .boton2{
+                    margin-top: 10px;
+                    margin-left: 0px;
+                }
+            }
+
+        }
+
+    }
+
+    .fitcontent{
+
+        height: fit-content;
+        padding-bottom: 10px;
+    }
+
+    aside{
+        display: flex;
+        width: 327px;
+        height: 186px;
+        left: 40px;
+        top: 750px;
+
+        div{
+
+            #mostrarTexto{
+                width: 280px;
+                height: max-content;
+            }
+
+            img{
+                display: none;
+            }
+
+            #error{
+                left: -10px;
+                top: 25px;
+            }
+
+            #consejo{
+                left: 40px;
+                top: 100px;
+                width: 250px;
+            }
+
+            #botonCopiar{
+                position: relative;
+                left: 0px;
+                top: 0px;
+                margin-left: 35px;
+                width: 250px;
+            }
+
+            #mensajeCopiado{
+                position: relative;
+                left: 0px;
+                top: 0px;
+                margin-left: 100px;
+            }
+
+        }
+
+        #credits{
+            margin-top: 40px;
+            margin-left: 20px;
+            p{
+                font-family: 'Inter';
+                font-size: 20px;
+                color: $colorprimario;
+            }
+
+        }
+    }
+
+        
+
+
+
+}
